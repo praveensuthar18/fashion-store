@@ -3,12 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 import "./App.css";
 import HomePage from "./pages/homepage/homepage.component";
-
-const HatsPage = () => (
-  <div>
-    <h1>HATS PAGE </h1>
-  </div>
-);
+import ShopPage from "./pages/shop/shop.component.jsx";
 
 class App extends Component {
   render() {
@@ -16,7 +11,7 @@ class App extends Component {
       <div>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/hats" element={<HatsPage />} />
+          <Route path="/shop" element={<ShopPage />} />
         </Routes>
       </div>
     );
